@@ -13,7 +13,7 @@ class HomeController extends Controller
 		return view('home.index');
 	}
 	
-	/*
+
 	public function create(){
 		//查询该表所有
 		$results0 = DB::table('users')->get();
@@ -35,7 +35,7 @@ class HomeController extends Controller
 		dump($results3);exit;
 		return view('home.create');
 	}
-	*/
+	
 	public function add(){
 		dump(User::all()->toArray());exit;
 		if(isset($_POST)){
